@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img:url('images/img1.jpg')">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('images/img2.jpg')">
+                <div class="content">
+                    <h2>Slide 02</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('images/img3.jpg')">
+                <div class="content">
+                    <h2>Slide 03</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('images/img4.jpg')">
+                <div class="content">
+                    <h2>Slide 04</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('images/img5.jpg')">
+                <div class="content">
+                    <h2>Slide 05</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('images/img6.jpg')">
+                <div class="content">
+                    <h2>Slide 06</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('images/img7.jpg')">
+                <div class="content">
+                    <h2>Slide 07</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('images/img8.jpg')">
+                <div class="content">
+                    <h2>Slide 08</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        vel in soluta repellat minus!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+
+        </div>
+
+    </div>
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slider = document.querySelector('.slider');
+
+        next.addEventListener('click', function () {
+            let slides = document.querySelectorAll('.slides');
+            slider.appendChild(slides[0]);
+        })
+        prev.addEventListener('click', function () {
+            let slides = document.querySelectorAll('.slides');
+            slider.prepend(slides[slides.length - 1]);
+        })
+
+    </script>
+
+
+</body>
+
+</html>
