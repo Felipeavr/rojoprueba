@@ -38,7 +38,7 @@
     height: 75%;
     left: 15%;
     top: 10%;
-    border: 2px white solid;
+    border: 0px white solid;
 
 
 }
@@ -58,7 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid #fff;
+    border: 0px solid #fff;
 
 
 }
