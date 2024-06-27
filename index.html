@@ -7,11 +7,22 @@
     <title>Responsive Image Slider</title>
     <link rel="stylesheet" href="slideplugin2.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/introLoader.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/jquery.introLoader.pack.min.js"></script>
 
 </head>
 
 <body>
-
+    <div id="element" class="introLoading"></div>
     <div class="topline"></div>
     <a href="index.html">
         <div class="logomain" title="Rojo Diseño Imagen" alt="logo">
@@ -128,6 +139,32 @@
             slider.prepend(slides[slides.length - 1]);
         })
 
+    </script>
+
+    <script>
+        $(document).on('ready', function () {
+
+            $("#element").introLoader({
+
+                animation: {
+                    name: 'simpleLoader',
+                    options: {
+                        exitFx: 'fadeOut',
+                        ease: "easeOutSine",
+                        style: 'light',
+                        animationTime: 1000
+                    }
+                },
+                spinJs: {
+                    length: 10, // The length of each line
+                    radius: 10, // The radius of the inner circle
+                    width: 4, // The line thickness
+                    color: '#fff' // #rgb or #rrggbb or array of colors
+                }
+
+            });
+
+        });
     </script>
 
 
