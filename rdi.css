@@ -54,6 +54,12 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Azsblack';
+	src: url('fonts/AzoSans-Black.otf')format("opentype");
+	font-weight: 600;
+	font-style: normal;
+}
 
 
 
@@ -182,7 +188,7 @@
 	font-family: 'SSprolight';
 	font-size: 11px;
 	text-align: right;
-	margin-left: 8px;
+	margin-left: 1px;
 	color: #999999;
 	font-weight: 300;
 	position: absolute;
@@ -370,9 +376,8 @@ img.imagenlema3 {
 .fotoonce1 {
 	width: 100%;
 	height: 100%;
-	border: 5px solid white;
-	border-bottom-right-radius: 25px;
-	border-top-right-radius: 25px;
+	border: 2px solid white;
+	border-top-right-radius: 20px;
 	overflow: hidden;
 
 
@@ -464,16 +469,15 @@ img.imagenlema3 {
 .cintro {
 	width: 100%;
 	height: 100%;
-	border: 5px solid white;
+	border: 2px solid white;
 	border-right: 0px;
 	background: rgba(185, 182, 176, .6);
 	z-index: 200;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	position: relative;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 
 
 }
@@ -483,36 +487,54 @@ img.imagenlema3 {
 	height: auto;
 	overflow: hidden;
 	z-index: 201;
-	/*background-color: orange;*/
 	margin-top: 7%;
 	margin-left: 7%;
-
-
-}
-
-.textuno p {
 	font-family: 'Azsbold';
 	font-style: normal;
-	font-size: 56px;
 	color: white;
-	text-align: justify;
+
+
 }
 
-.textuno p span {
-	font-size: 48px;
-	color: #fff;
+.diseno {
+	font-size: 68px;
+	padding-top: 15px;
 }
+
+.paratu {
+	font-size: 57px;
+	margin-top: -30px;
+}
+
+.marca {
+	font-size: 68px;
+	margin-top: -30px;
+}
+
+#cruz {
+	width: 0;
+	font-family: 'Azsblack';
+	font-size: 40px;
+	margin-top: -9px;
+	margin-left: 5px;
+	background: orange;
+	position: absolute;
+
+
+}
+
 
 .textdos {
-	width: 86%;
+	width: auto;
 	height: auto;
 	margin-left: 7%;
-	margin-top: 20px;
-	margin-bottom: 7%;
+	margin-top: 5px;
+	margin-bottom: 2%;
+	position: relative;
 }
 
 .textdos p {
-	width: 100%;
+	width: 90%;
 	height: auto;
 	font-family: 'azosanslig';
 	font-style: normal;
@@ -520,7 +542,7 @@ img.imagenlema3 {
 	color: white;
 	text-transform: uppercase;
 	text-align: left;
-	/*background-color: #42d49c;*/
+
 
 }
 
@@ -532,29 +554,38 @@ img.imagenlema3 {
 	height: auto;
 	/*background: rgb(82, 78, 72);*/
 	margin-left: 7%;
-	margin-bottom: 5%;
+	margin-bottom: 7%;
 	margin-right: 7%;
-	margin-top: 10%;
 	position: relative;
 
 }
 
-.texttres p {
+.parrafotres {
 	width: 50%;
 	height: auto;
-	margin-left: 0;
-	text-align: justify;
-	font-family: 'azosanslig';
-	font-style: normal;
-	font-size: 14px;
-	color: white;
-	/*background-color: #42d49c;*/
-	position: absolute;
-	right: 5%;
-	bottom: 0;
+	margin-left: 50%;
 
 
 }
+
+.imagenlema {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.parrafotres p {
+	width: 100%;
+	height: auto;
+	font-family: "SSprolight";
+	font-size: 14px;
+	text-align: justify;
+	color: white;
+
+
+}
+
+
 
 .blancuadro2 {
 	width: 50%;
@@ -563,7 +594,7 @@ img.imagenlema3 {
 	background: #ffffff;
 	z-index: 11111;
 	position: relative;
-	border-top-right-radius: 25px;
+	border-top-right-radius: 20px;
 
 
 
@@ -624,7 +655,7 @@ img.imagenlema3 {
 	margin-left: 0;
 	background: #ffffff;
 	z-index: 11199;
-	border-top-right-radius: 25px;
+	border-top-right-radius: 20px;
 }
 
 .cycle-slide.cycle-sentinel {
@@ -1556,9 +1587,7 @@ li:hover {
 		bottom: -53px;
 	}
 
-	.texttres p {
-		width: 70%;
-	}
+
 
 
 }
@@ -1591,7 +1620,6 @@ li:hover {
 
 @media screen and (max-width: 1280px) {
 	.imagenlema {
-
 		margin-top: 0px;
 
 	}
@@ -1600,25 +1628,18 @@ li:hover {
 		bottom: -45px;
 	}
 
-	.texttres {
-		width: 85%;
-	}
-
-	.texttres p {
-		width: 70%;
-	}
-
 	.contenedor01 {
 		padding-bottom: 160px;
 	}
-}
 
-
-@media screen and (max-width: 1200px) {
-	.texttres p {
-		width: 80%;
+	.parrafotres {
+		width: 70%;
+		margin-left: 30%;
 	}
+
 }
+
+
 
 @media screen and (max-width: 1024px) {
 	.main {
@@ -1636,10 +1657,6 @@ li:hover {
 
 	.main {
 		margin-bottom: 100px;
-	}
-
-	.textdos {
-		display: none;
 	}
 
 	.contenedor01 {
