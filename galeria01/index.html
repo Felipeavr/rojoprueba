@@ -5,17 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="slideplugin2.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/introLoader.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/jquery.introLoader.pack.min.js"></script>
+
 </head>
 
 <body>
+    <div id="element" class="introLoading"></div>
+    <div class="topline"></div>
+    <a href="index.html">
+        <div class="logomain" title="Rojo Diseño Imagen" alt="logo">
+            <div class="logopng"></div>
+            <div class="textologo">
+                <p class="title"><span>ROJO</span> DISEÑO IMAGEN</p>
+                <p class="subtitle">diseño · visual · merchandising</p>
+            </div>
+        </div>
+    </a>
+
+
     <div class="container">
+
         <div class="slider">
             <div class="slides" style="--img:url('images/v6.jpg')">
                 <div class="content">
                     <h2>Slide 01</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
-                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus
+                        optio
                         vel in soluta repellat minus!
                     </p>
                 </div>
@@ -24,7 +52,8 @@
                 <div class="content">
                     <h2>Slide 02</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
-                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus
+                        optio
                         vel in soluta repellat minus!
                     </p>
                 </div>
@@ -33,7 +62,8 @@
                 <div class="content">
                     <h2>Slide 03</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
-                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus
+                        optio
                         vel in soluta repellat minus!
                     </p>
                 </div>
@@ -42,7 +72,8 @@
                 <div class="content">
                     <h2>Slide 04</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
-                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus
+                        optio
                         vel in soluta repellat minus!
                     </p>
                 </div>
@@ -51,7 +82,8 @@
                 <div class="content">
                     <h2>Slide 05</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
-                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus
+                        optio
                         vel in soluta repellat minus!
                     </p>
                 </div>
@@ -60,7 +92,8 @@
                 <div class="content">
                     <h2>Slide 06</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam sunt provident cumque
-                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus optio
+                        commodi. Beatae, accusantium labore facere, quaerat omnis quisquam dolore aperiam natus
+                        optio
                         vel in soluta repellat minus!
                     </p>
                 </div>
@@ -91,6 +124,7 @@
         </div>
 
     </div>
+
     <script>
         let next = document.querySelector('.next');
         let prev = document.querySelector('.prev');
@@ -106,6 +140,33 @@
         })
 
     </script>
+
+    <script>
+        $(document).on('ready', function () {
+
+            $("#element").introLoader({
+
+                animation: {
+                    name: 'simpleLoader',
+                    options: {
+                        exitFx: 'fadeOut',
+                        ease: "easeOutSine",
+                        style: 'light',
+                        animationTime: 1000
+                    }
+                },
+                spinJs: {
+                    length: 10, // The length of each line
+                    radius: 10, // The radius of the inner circle
+                    width: 4, // The line thickness
+                    color: '#fff' // #rgb or #rrggbb or array of colors
+                }
+
+            });
+
+        });
+    </script>
+
 
 
 </body>
