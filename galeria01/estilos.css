@@ -138,7 +138,7 @@
     left: 0;
     width: 50px;
     height: 50px;
-    background: #c0bfbf;
+    background: #b61515;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -151,8 +151,8 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    border-top: 4px solid #aa0b0b;
-    border-left: 4px solid #aa0b0b;
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid #ffffff;
     transform: rotate(315deg) translate(2px, 2px);
 
 }
