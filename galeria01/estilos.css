@@ -260,5 +260,16 @@
         width: 90%;
         left: 5%;
     }
+
+    .buttons {
+        width: 94%;
+        top: calc(50%-40vh);
+    }
+
 }
 
+@media screen and (max-width: 1024px) {
+    .slider {
+        top: 70px;
+    }
+}
