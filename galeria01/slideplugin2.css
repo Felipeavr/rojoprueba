@@ -52,17 +52,7 @@
     display:none
 }*/
 
-.sb-site-container {
-	width: 100%;
-	height: auto;
-	background: url('images/portafondo.jpg')no-repeat top fixed;
-	background-size: cover;
-	overflow-y: hidden;
-	display: flex;
-	justify-content: center;
 
-
-}
 
 .flinks {
 
@@ -553,6 +543,7 @@ button.close {
 	box-shadow: 2px 1px 8px 0px rgba(45, 50, 50, 0.49);
 
 
+
 }
 
 
@@ -573,8 +564,6 @@ button.close {
 	float: left;
 	margin-top: 9px;
 
-
-
 }
 
 .textologo p.title span {
@@ -583,6 +572,7 @@ button.close {
 	font-weight: 400;
 	font-size: 19px;
 	font-family: 'SSproregular';
+
 }
 
 .textologo p.title {
@@ -592,17 +582,19 @@ button.close {
 	font-family: 'SSprolight';
 
 
+
 }
 
 .subtitle {
 	font-family: 'SSprolight';
 	font-size: 11px;
 	text-align: right;
-	margin-left: 8px;
+	margin-left: 1px;
 	color: #999999;
 	font-weight: 300;
 	position: absolute;
-	margin-top: -22px;
+	margin-top: -2px;
+
 
 }
 
