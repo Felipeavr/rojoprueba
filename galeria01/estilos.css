@@ -285,3 +285,13 @@
 
     }
 }
+@media (max-width: 440px) {
+    .slider {
+        top: 3%;
+    }
+
+    .buttons {
+        width: 94%;
+        top: 40%;
+    }
+}
