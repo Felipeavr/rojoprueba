@@ -275,4 +275,13 @@
         left: 600px;
         opacity: 0;
     }*/
+       .content h2 {
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    .content p {
+        width: 90%;
+
+    }
 }
