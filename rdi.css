@@ -981,6 +981,18 @@ p#ubica {
 	justify-content: center;
 }
 
+.qrcode {
+	width: 148px;
+	height: 148px;
+	background: orange;
+	margin: 40px auto;
+}
+
+.qrcode img {
+	width: 100%;
+	height: auto;
+}
+
 .arroba {
 	font-family: 'azosansmd';
 	font-size: 14px;
@@ -1813,16 +1825,15 @@ li:hover {
 
 
 }
-
-
-
-
 @media screen and (max-width: 500px) {
 	.main {
 		width: 98%;
 	}
 
+.qrcode {
 
+		margin-left: 0;
+	}
 
 	.cuadroyellow {
 		width: 80%;
