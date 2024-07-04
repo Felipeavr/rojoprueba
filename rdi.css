@@ -1526,7 +1526,7 @@ p#final3 {
 	position: relative;
 	padding-top: 0px;
 	background: #ee8a07;
-	background-image: url(images/vector4.jpg);
+	background-image: url(images/vector14.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1562,7 +1562,7 @@ p#final3 {
 	/*background: #5cb85c;*/
 	clip-path: polygon(100% 15%, 100% 100%, 0 100%, 0 5%);
 	border-radius: 10px;
-	background: linear-gradient(transparent, rgb(151, 238, 216), rgb(4, 150, 113));
+	background: linear-gradient(transparent, rgb(92, 91, 91), rgb(48, 47, 47));
 
 }
 
