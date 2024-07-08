@@ -1207,7 +1207,7 @@ b {
 	width: 148px;
 	height: 148px;
 	background: orange;
-	margin: 30px 25px;
+	margin: 30px 0px 0 45px;
 }
 
 .qrcode img {
