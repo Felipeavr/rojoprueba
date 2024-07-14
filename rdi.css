@@ -1069,7 +1069,12 @@ p#ubica {
 	margin-top: 12px;
 }
 
-.txcont02 p span {
+.txcont01 p span,
+.txcont02 p span,
+.txcont03 p span,
+.txcont04 p span,
+.txcont05 p span,
+.txcont06 p span {
 	color: #b30f0f;
 }
 
