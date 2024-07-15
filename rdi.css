@@ -1208,25 +1208,24 @@ p#ubica {
 }
 
 .qrcode {
+	.qrcode {
+	width: 180px;
+	height: 180px;
+	background: rgba(255,255,255,.5);
+	margin: 30px 25px;
+	border: 0px solid #ca0b0f;
+	border-radius: 5px;
+}
+.qrcode img {
 	width: 148px;
 	height: 148px;
-	background: orange;
-	margin: 30px 0px 0 45px;
+	margin: 16px ;
 }
-
-.qrcode img {
-	width: 100%;
-	height: auto;
-}
-
 .titulocontacto {
 	width: 150px;
 	margin: auto 30px;
-
 }
-
 h3 {
-
 	width: 100%;
 	margin: 50px 0 0 0px !important;
 }
