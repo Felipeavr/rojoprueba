@@ -61,7 +61,70 @@
 	font-style: normal;
 }
 
+/* Intro loader*/
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.75s, visibility 0.75s;
+	background: #bdbcbc;
+	z-index: 100000000000000;
+}
 
+/*.loader::after {
+	content: '';
+	width: 153px;
+	height: 188px;
+	transform: scale(.5);
+	background-image: url(images/simbolo.png);
+	animation: size .8s ease infinite;
+}*/
+.loader::after {
+	content: '';
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	border-top-color: #cd2e2e;
+    position: relative;
+	animation: loading 0.75s ease infinite;
+}
+
+.imrojo {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-image: url(images/simbolo.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+@keyframes loading {
+	from {
+		transform: rotate(0turn);
+	}
+
+	to {
+		transform: rotate(1turn);
+	}
+
+}
+
+
+.loader--hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* intro loader fin */
 
 /*
 ::-webkit-scrollbar {
