@@ -1810,20 +1810,21 @@ p#final3 {
 
 .card {
 	width: 235px;
-	height: 300px;
+	height: auto;
 	margin: 50px auto;
 	border: 0px solid #c0c0c0;
 	position: relative;
 	padding-top: 0px;
-	background: #b33ba9;
 	background-image: url(images/vector4.jpg);
 	background-position: left center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 5px 0 0 0;
-	box-shadow: 1px 3px 13px 3px rgba(0, 0, 0, 0.75);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: (5px);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
-	position: relative;
+	
 
 }
 
@@ -1832,15 +1833,17 @@ p#final3 {
 	height: auto;
 	margin: 80px auto;
 	border: 0px solid #c0c0c0;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: (5px);
 	position: relative;
 	padding-top: 0px;
-	background: #ee8a07;
 	background-image: url(images/vector14.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 10px 0 0 0;
-	box-shadow: 1px 3px 13px 3px rgba(0, 0, 0, 0.75);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 }
 
